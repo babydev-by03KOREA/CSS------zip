@@ -1,0 +1,19 @@
+display와 position에대해 정리합니다.
+
+<display>
+inline -> 콘텐츠 자체를 꾸며줌.(물건)
+width / height 정의한거 개 무시하고 물건에 크기에 맞춰 꾸며줌
+
+inline-block
+한줄에 블럭단위로 지정한 width나 height에 맞춰서 한줄정렬
+
+block은 한줄에 하나씩 정렬됨
+
+<position>
+article -> default
+relative -> 원래 있어야 하는 자리에서 top/bottom/left/right 값을줘서 옮겨갈 수 있음
+absolute -> 아이템이 담겨있는 상자안에서 옮겨감
+fixed -> 상자안에서 완전히 벗어나서 window안에서 움직여감! (산업기사때 씀!)
+sticky -> 원래 있어야 하는 자리에 있으면서 스크롤링 되어도 그자리에 붙어있음
+
+

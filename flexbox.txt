@@ -1,0 +1,48 @@
++ float
+float: left / center / right
+-> browser상에 사진과 Text를 배치하기위해 추가됨
+
+FlexBox KeyWorld1
+No.1 container에 지정되는 속성값
+No.2 container안에 들어가는 items에 지정하는 속성값
+
+중심(main axis)과 반대축(cross axis)
+내가 중심축을 수평이냐 수직에두냐에따라 달라짐!
+
+div.container>div.item.items${$}*10
+-> div안에 클래스는 컨테이너/ 컨테이너 안에 또 다른 item이라는 클래스로 만들거고
+각각 아이템마다 고유에 번호를 지정하고 그 안에 텍스트는 $와 동일하게 * 10
+
+display: flex
+-> 자동으로 왼쪽에서 오른쪽으로
+
+flex-direction options
+row: default / row-reverse: 왼쪽에서 오른쪽으로
+column: 위에서 아래로 / row-column: 아래에서 위로
+
+flex-wrap options
+nowrap: default / 아무리 많아도 한줄에 다 올려!
+wrap: 라인을 넘어가면 자동으로 다음줄로 넘어감
+
+justify-content
+-> 중심축에서 아이템들을 어떻게 배치할건지
+flex-start: default / 처음부터 왼 -> 오 or 위 -> 아래로
+flex-end: 순서는 그대로
+center: 센터 (산업기사때)::before
+space-around: 점점 큰 아이템들의 공간을 줌
+space-evenly: 동일한 공간을 줌
+space-between: 왼쪽과 오른쪽은 딱 붙이고 나머지만 공간을줌
+
+align-items
+-> 반대축에서 아이템들을 어떻게 배치할건지
+baseline: text가 균등하게 아이템에 배치됨
+
+align-content: 위 아래로 중간으로 배치함
+space-between: 위 아래는 딱 붙어있고 중간에 아이들만 공간이 있음
+
+flex-grow: 디스플레이 크기에 따라 늘리기
+숫자로 배(*)수를 작성가능
+flex-shirink: 줄어들때 주는속성
+flex-basis: 세부적으로(ex %) 조절가능
+
+align-self: 아이템별로 설정이 가능함 / 컨테이너에서 벗어나서 설정가능!

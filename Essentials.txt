@@ -1,0 +1,50 @@
+1. Box Sizing
+default: box-sizing: content-box;
+일반적으로 Padding을 주면 box는 유지하고 padding값이 추가된다.
+포트폴리오에서 사용할 기본값: box-sizing: border-box;
+border-box의 경우, padding과 border을 합쳐서! 줄어든다.
+
+2. Position
+default: static!
+relative: 원래 있던 자리에서 준 부가 속성대로 움직인다.
+absolute: 원래 있던 자리에서 쏙 빠짐. 근접한 부모 중 'static(default)'가 아닌
+요소에 맞춰서 포지션이 움직입니다.
+sticky: 등록한 부모Box 안에서 position 지정 다만 top, bottom등의 속성을 주어야한다.
+fixed: 부모와 상관없이 부모 box에서 탈출해서 position이 지정된다.
+
+3. flexBox를 주지않고 요소배치
+bluck요소들을 center로 정렬하려면 margin-auto를 주면됨!
+inline-bluck(Ex. button)의 중간정렬은 text-align: center로
+* 가로 이동은 괜찮아 근데 세로는? flexBox를 안쓴다고? *
+transform: translate(50%, 50%);
+* 오케이 굳 그럼 text는? *
+text-align: center;
+line-height: 100px; (100 * 100기준, 세로줄이 100이니깐 요소에 중간에 맞춰짐!)
+
+4. Translate
+자기 자신의 사이즈에 %지수 만큼 움직인다.
+요소에 크기 절반만큼 다시 중간에 오게 해야한다.
+body요소에서 가운데로 이동하는 방법은 아래와 같다.
+top: 50%; left: 50%; transform: translate(-50%, -50%);
+
+5. Background
+이미지가 반복되서 쭉 나오는걸 방지하려면? background-repeat: no-repeat;
+이미지의 포지션을 background-position: center;
+남은공간 여백 차지하면서 size를 조정하려면 background-size: cover;
+위에걸 다 줄여서 한줄로 만들면? background: center/ cover no-repeat;
+
+6. Transform
+translate는 위치를 이동할때 사용됩니다. translate(x축, y축)
+transform: translate(-50px, -50px);
+scale: 확대(크기를 키움) / transform: scale(1.2);
+rotate: 기울이기 / transform: rotate(45deg);
+
+7. Magic Animation!
+바꿀게 뭐야? transform-property: background-color;
+얼마나 오랫동안 할거야? transition-duration: 300ms;
+브라우저에서 우리가 정해놓은 시작점과 변화되는것, 기간을 지정해주세요.
+animation-timing-function을 사용하면 되고, mdn을 참고하여 제작하면 된다!
+
+이상으로 css+요소의 정리를 마무리합니다.
+
+
